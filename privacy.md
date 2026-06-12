@@ -1,6 +1,6 @@
 # RightCard Privacy Policy
 
-**Effective date:** June 5, 2026
+**Effective date:** June 12, 2026
 
 RightCard helps you choose the best credit card for any purchase. It is built to
 be **privacy-first**: no sign-up, no personal information, and no tracking.
@@ -10,8 +10,12 @@ be **privacy-first**: no sign-up, no personal information, and no tracking.
   email, phone number, address, account numbers, balances, or login credentials.
 - **No tracking, no ads, no analytics.** RightCard contains no advertising,
   attribution, or analytics SDKs.
-- **No location access.** Store search uses a fixed, country-level region hint
-  only — we never request or read your location.
+- **Location is optional and stays on your device.** By default we use only a
+  fixed, country-level region hint — no location access. If you turn on the
+  optional **Nearby reminders** feature, RightCard uses your location **while you
+  are using the app** to suggest your best card at a nearby store. That location
+  is used only on your device (and by Apple Maps to find nearby stores) and is
+  **never sent to our servers, stored, or logged.**
 - **Your recommendations run on your device** and work offline.
 
 ## What we store, and where
