@@ -1,3 +1,7 @@
+---
+redirect_to: "https://rightcard.ai/feedback"
+---
+
 # RightCard — Feedback & Feature Requests
 
 Found a bug? Have an idea for a card, a store, or a feature? Tell us — RightCard

@@ -1,3 +1,7 @@
+---
+redirect_to: "https://rightcard.ai/privacy"
+---
+
 # RightCard Privacy Policy
 
 **Effective date:** June 12, 2026

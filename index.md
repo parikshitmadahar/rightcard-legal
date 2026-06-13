@@ -1,3 +1,7 @@
+---
+redirect_to: "https://rightcard.ai/"
+---
+
 # RightCard
 
 - [Privacy Policy](./privacy)
