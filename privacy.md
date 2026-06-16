@@ -4,7 +4,7 @@ redirect_to: "https://rightcard.ai/privacy"
 
 # RightCard Privacy Policy
 
-**Effective date:** June 12, 2026
+**Effective date:** June 16, 2026
 
 RightCard helps you choose the best credit card for any purchase. It is built to
 be **privacy-first**: no sign-up, no personal information, and no tracking.
@@ -16,10 +16,14 @@ be **privacy-first**: no sign-up, no personal information, and no tracking.
   attribution, or analytics SDKs.
 - **Location is optional and stays on your device.** By default we use only a
   fixed, country-level region hint — no location access. If you turn on the
-  optional **Nearby reminders** feature, RightCard uses your location **while you
-  are using the app** to suggest your best card at a nearby store. That location
-  is used only on your device (and by Apple Maps to find nearby stores) and is
-  **never sent to our servers, stored, or logged.**
+  optional **Offer alerts nearby** feature, RightCard uses your location **in the
+  background** to alert you when you're at a store that has an offer on one of your
+  cards. That location is used only on your device (and by Apple Maps to find
+  nearby stores) and is **never sent to our servers, stored, or logged.** It is off
+  by default and the app works fully without it.
+- **Notifications are local.** Any reminders — an offer about to expire, your sweep
+  streak, or a nearby offer — are scheduled **on your device**. We don't run a push
+  server, and nothing about them leaves your phone.
 - **Your recommendations run on your device** and work offline.
 
 ## What we store, and where
@@ -43,6 +47,23 @@ be **privacy-first**: no sign-up, no personal information, and no tracking.
   personal information.**
 
 All network traffic uses HTTPS.
+
+## Location and Notifications (optional)
+
+**Location.** RightCard does not use your location by default; merchant search
+uses a fixed, country-level region hint. If you enable **Offer alerts nearby**,
+RightCard uses background location (with your "Always" permission) for a single
+purpose: to detect when you arrive at a merchant that has an offer on one of your
+cards, and to show you a reminder. The coordinate is used **only on your device**
+— to ask Apple Maps what stores are nearby and to match them against the offers
+already stored on your device. It is **never transmitted to our servers, never
+stored, and never logged.** The feature is **off by default**, you can turn it off
+at any time, and the app is fully functional without it.
+
+**Notifications.** RightCard's reminders — for offers about to expire, your weekly
+sweep streak, and nearby offer alerts — are **local notifications scheduled on
+your device.** We do not operate a push-notification server; no notification
+content or schedule is sent off your phone. Notifications are opt-in.
 
 ## The Safari extension (optional)
 RightCard includes an optional Safari extension that, **only on your bank's
