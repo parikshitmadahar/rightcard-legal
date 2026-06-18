@@ -4,16 +4,25 @@ redirect_to: "https://rightcard.ai/privacy"
 
 # RightCard Privacy Policy
 
-**Effective date:** June 16, 2026
+**Effective date:** June 17, 2026
 
 RightCard helps you choose the best credit card for any purchase. It is built to
-be **privacy-first**: no sign-up, no personal information, and no tracking.
+be **privacy-first**: an account is optional, we collect no unnecessary personal
+information, we never connect to your bank, and there is no third-party tracking.
 
 ## The short version
-- **No accounts, no personal info.** We never ask for or collect your name,
-  email, phone number, address, account numbers, balances, or login credentials.
-- **No tracking, no ads, no analytics.** RightCard contains no advertising,
-  attribution, or analytics SDKs.
+- **An account is optional.** You can use RightCard fully without signing in. If
+  you choose to create an account — to back up your synced offers and use them on
+  another device — we store only the identifier you sign in with: a **Sign in with
+  Apple** identifier (which can be a private *Hide My Email* relay address) or an
+  email address. We never ask for your name, phone number, or address.
+- **No bank login, ever.** RightCard never connects to your bank or card through
+  Plaid or any other aggregator, and never sees your account numbers, balances, or
+  transactions.
+- **No third-party tracking or ads.** RightCard contains no advertising,
+  attribution, or third-party analytics SDKs. We keep only minimal first-party
+  usage data (your app version and the date you last opened the app) to understand
+  active usage — never sold or shared.
 - **Location is optional and stays on your device.** By default we use only a
   fixed, country-level region hint — no location access. If you turn on the
   optional **Offer alerts nearby** feature, RightCard uses your location **in the
@@ -37,16 +46,39 @@ be **privacy-first**: no sign-up, no personal information, and no tracking.
 
 **On our backend (Supabase):**
 
-- An **anonymous identity** — a randomly generated device ID and access token. It
-  is **not linked to any personal information** and is created automatically (no
-  sign-up).
+- An **anonymous identity** — a randomly generated ID and access token, created
+  automatically with no sign-up and not linked to any personal information.
+- If you create an account, the **sign-in identifier** you used: a Sign in with
+  Apple user identifier (and the email Apple shares with us, which may be a private
+  `@privaterelay.appleid.com` relay address), or the email address you registered.
+  Creating an account does not change what app data we hold — it keeps the **same**
+  identity, so your synced offers simply become recoverable and syncable across
+  your devices.
 - The **card offers you choose to sync** from your bank, stored only as
-  `{ card, merchant, percentage/amount, expiration, source }`. These are private
-  to your anonymous identity and isolated by row-level security so no other user
-  can read them. **We never store account numbers, balances, transactions, or any
-  personal information.**
+  `{ card, merchant, percentage/amount, expiration, source }`. These are private to
+  your identity and isolated by row-level security so no other user can read them.
+  **We never store account numbers, balances, transactions, or any personal
+  information.**
+- A **minimal usage record** — your app version and the date you last opened the
+  app, tied to your identity — used only to measure active usage. No spend, no
+  transactions, no personal profile.
 
 All network traffic uses HTTPS.
+
+## Your account (optional)
+
+RightCard works fully without an account. Creating one is entirely optional and
+exists for a single purpose: to **back up the offers you've synced and make them
+available on your other devices** (and to recover them if you reinstall the app).
+
+- You can sign in with **Sign in with Apple** (including *Hide My Email*, so we
+  only ever see a private relay address) or with an **email and password**. That is
+  the only information an account adds.
+- An account is **never** a bank login. We never ask you to connect a card, link a
+  bank, or share credentials.
+- Your data stays isolated to you by row-level security — no other user can read it.
+- You can **sign out** at any time, or **permanently delete** your account and its
+  data from inside the app (see "Deleting your data").
 
 ## Location and Notifications (optional)
 
@@ -83,9 +115,11 @@ We do **not** sell, rent, or share your data with third parties. We have no
 advertising or data-broker relationships.
 
 ## Deleting Your Data
-- Use **Data & About → Clear synced offers** to delete the offers stored under
-  your anonymous identity.
-- **Deleting the app** removes your device-only session and anonymous identity.
+- Use **Settings → Account → Delete account** to permanently delete your account
+  and the offers synced to it.
+- Use **Settings → Clear synced offers** to remove the offers stored under your
+  identity while keeping the app.
+- **Deleting the app** removes your device-only session.
 - To request deletion of any remaining data, email us (below).
 
 ## Children's Privacy
